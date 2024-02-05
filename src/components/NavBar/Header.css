@@ -1,38 +1,37 @@
-.navbar {
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    padding: 0 7%;
-    position: sticky;
-    z-index: 3;
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	padding: 10px 80px;
+	color:rgb(21, 54, 23); 
 }
 
-.user {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
 }
 
-ul {
-    flex: 1;
-    list-style: none;
-    text-align: center;
+#navbar li {
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
 }
 
-ul li {
-    display: inline-block;
-    margin: 1rem;
-    font-size: 18px;
-    cursor: pointer;
+#navbar li a {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1.3rem;
+	transition: 0.1s ease-in-out;
+	color: rgb(21, 54, 23);
+	cursor: pointer;
 }
 
-ul li:hover {
-    border-bottom: 3px solid black; 
-    font-weight: bold;
-}
+#navbar li a:hover{
+	border-bottom: 3px solid rgb(80, 206, 89); 
+	color: rgb(80, 206, 89);
+} 
 
 .logo {
     width: 50px;
@@ -41,16 +40,40 @@ ul li:hover {
     border-radius: 50%;
 }
 
-.contact {
-    background-color: black;
-    border-radius: 35px;
-    color: white;
-    padding: 1rem;
-    display: flex;
-    border: none;
+h2 {
+    color:  rgb(21, 54, 23);
 }
 
-.icon {
-    height: 1rem;
-    width: 2rem;
+#icons {
+	display: none;
+}
+
+@media only screen and (max-width: 780px){
+
+	#navbar {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start; 
+		position: fixed;
+		top: 70px;
+		right: -300px;
+		width: 300px;
+		height: 40rem;
+		background-color: white;
+		padding: 40px 0 0 10px
+	}
+
+	#navbar.active {
+		right: 0px;
+	}
+
+	#navbar li {
+		margin-bottom: 25px;;
+	}
+
+	#icons {
+		display: block;
+		cursor: pointer;
+	}
 }

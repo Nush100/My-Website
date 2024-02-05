@@ -1,25 +1,36 @@
 import React from "react";
-import { FaRegMessage } from "react-icons/fa6";
+import { useState } from "react";
 import './Header.css';
 import me from "./../../assets/me.jpg"
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
-  return (
-    <div className="navbar">
-      <div className="user">
-        <img src={me} className="logo" alt="me"/>
-        <h2>Nushara Kavindi</h2>
-      </div>
-      <ul>
-        <li>About</li>
-        <li>Education</li>
-        <li>Projects</li>
-      </ul>
-      <button className="contact">
-        <FaRegMessage className="icon"/>Contact me
-      </button>
-    </div>
-  );
+	const [isBarVisible, setIsBarVisible] = useState(true);
+	const [isClicked, setIsClicked] = useState(false);
+
+	const handleIconClick = () => {
+		setIsBarVisible(!isBarVisible);
+		setIsClicked(!isClicked);
+	};
+
+	return (
+		<>
+			<nav>
+				<img src={me} className="logo" alt="me"/>
+				<div className="nav-icons">
+					<ul id="navbar" className={isClicked ? "#navbar active" : "#navbar"}>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Education</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<div id="icons"> 
+						{isBarVisible ? <FaBars onClick={handleIconClick} /> : <FaTimes onClick={handleIconClick} />}
+					</div>
+				</div>
+			</nav>
+		</>
+	);
 }
 
 export default Header;
