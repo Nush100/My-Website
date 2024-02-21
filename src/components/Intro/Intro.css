@@ -1,0 +1,63 @@
+#intro {
+    height: calc(100vh-5rem);
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    object-fit: cover;
+    height: 100vh;
+    z-index: -1;
+    border-radius: 25px;
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: rgb(117, 184, 202);
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 780px){
+    .hello {
+        color: rgb(94, 190, 217);
+        font-size: 4.5vw
+    }
+    
+    .introName {
+        color: rgb(255, 255, 255);
+    }
+    
+    .introPara {
+        color: rgb(94, 190, 217);
+    }
+
+    .introContent{
+        color: rgb(94, 190, 217);
+        font-size: 10vw;
+    }
+}
