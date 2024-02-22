@@ -1,14 +1,15 @@
+import React from 'react';
 import Header from './components/NavBar/Header';
-import Footer from './components/Footer'; 
 import './App.css';
 import Intro from './components/Intro/Intro';
+import Services from './components/Services/Services';
 
 function App() {
   return (
     <div className='container'>
       <Header />
       <Intro/>
-      <Footer />
+      <Services/>
     </div>
   );
 }

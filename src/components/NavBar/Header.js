@@ -19,9 +19,10 @@ const Header = () => {
 				<img src={me} className="logo" alt="me"/>
 				<div className="nav-icons">
 					<ul id="navbar" className={isClicked ? "#navbar active" : "#navbar"}>
+						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Education</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#">Skills</a></li>
 						<li><a href="#">Contact</a></li>
 					</ul>
 					<div id="icons"> 
