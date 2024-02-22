@@ -22,8 +22,8 @@ const Header = () => {
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About</a></li>
 						<li><a href="#services">Services</a></li>
-						<li><a href="#">Skills</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 					<div id="icons"> 
 						{isBarVisible ? <FaBars onClick={handleIconClick} /> : <FaTimes onClick={handleIconClick} />}

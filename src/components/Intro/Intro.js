@@ -1,6 +1,6 @@
 import React from "react";
 import './Intro.css';
-import profile from "./../../assets/me.jpg";
+import profile from "./../../assets/profile.JPG";
 
 const Intro = () => {
   return (
