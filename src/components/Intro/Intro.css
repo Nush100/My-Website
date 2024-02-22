@@ -3,29 +3,18 @@
     width: 100%;
     max-width: 75rem;
     margin: 0 auto;
-    overflow: hidden;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .bg{
-    position: absolute;
     top: 2rem;
     right: 0;
     object-fit: cover;
-    height: 100vh;
-    z-index: -1;
-    border-radius: 25px;
-}
-
-.introContent {
-    height: 100vh;
-    width: 100vw;
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 94vh;
+    
 }
 
 .hello {
@@ -42,14 +31,40 @@
     font-weight: 100;
 }
 
-@media only screen and (max-width: 780px){
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 720px) {
+    #intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bg {
+        top: 0; 
+        width: 100vw; 
+        height: 80vh; 
+        z-index: -1;
+        position: absolute;
+    }
+    
     .hello {
         color: rgb(94, 190, 217);
-        font-size: 4.5vw
+        font-size: 4.5vw;
     }
     
     .introName {
-        color: rgb(255, 255, 255);
+        color: rgb(212, 228, 239);
     }
     
     .introPara {
