@@ -7,7 +7,7 @@ const Services = () => {
         <section id="services">
             <div className="serviceHeading">
                 <span className="serviceTitle">What I do</span>
-                <span className="serviceDesc">Description aaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaa</span>
+                <span className="serviceDesc">I am skilled in web development and mobile application development</span>
             </div>
             <div className="serviceBars">
                 {ServiceList.map((service, index) => (

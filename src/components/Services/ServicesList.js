@@ -7,22 +7,22 @@ const ServiceList = [
     {
         img: webDeveloper,
         serviceName: "Web Development",
-        serviceDesc: "Skill Description"
+        serviceDesc: "Website Development using HTML, CSS, JavaScript, React etc."
     },
     {
         img: mobileAppDev,
         serviceName: "Mobile Application Development",
-        serviceDesc: "Skill Description"        
+        serviceDesc: "Android Mobile Application Development"       
     },
     {
         img: contentCreator,
         serviceName: "Content Creation",
-        serviceDesc: "Skill Description"
+        serviceDesc: "Youtube Content Creator"
     },
     {
         img: blogWriter,
         serviceName: "Blog Writer",
-        serviceDesc: "Skill Description"
+        serviceDesc: "Blog Writer in Medium"
     }
 ]
 
