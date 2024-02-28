@@ -12,7 +12,9 @@ const Intro = () => {
           <br/>
           FullStack Developer
         </span>
-        <p className="introPara">I am a skilled web developer</p>
+        <p className="introPara">I am a Computer Science Graduate, <br/>
+          and a skilled Web Developer.
+        </p>
       </div>  
       <img src={profile} alt="background" className="bg"/> 
     </section>
